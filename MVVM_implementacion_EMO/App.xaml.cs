@@ -1,4 +1,5 @@
-﻿using MVVM_implementacion_EMO.Vistas;
+﻿using MVVM_implementacion_EMO.VistaModelo;
+using MVVM_implementacion_EMO.Vistas;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace MVVM_implementacion_EMO
         {
             InitializeComponent();
 
-            MainPage = new pagina1();
+            MainPage = new NavigationPage(new pagina1());
         }
 
         protected override void OnStart()
